@@ -117,7 +117,6 @@ class _LoginScreenState extends State<LoginScreen> {
   bool hidePassword = true;
   final form = GlobalKey<FormState>();
   final FirebaseAuth _auth = FirebaseAuth.instance;
-
   Future<void> login() async {
     try {
       final user = (await _auth.signInWithEmailAndPassword(
