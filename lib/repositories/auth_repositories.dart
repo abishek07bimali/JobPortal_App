@@ -26,7 +26,6 @@ class AuthRepository{
       user.fcmToken = "";
       // insert into firestore user table
       await FirebaseService.db.collection('users').add(user.toJson());
-      throw Exception("Signup success");
       return _uc;
     } catch (err) {
       rethrow;
