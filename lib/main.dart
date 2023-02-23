@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:ind_flutter/Authentication/FirstScreens/Screens1.dart';
 import 'package:ind_flutter/Authentication/ForgetPassword.dart';
 import 'package:ind_flutter/ui/AcceptAgreement.dart';
 import 'package:ind_flutter/ui/mainscreen.dart';
@@ -11,6 +10,11 @@ import 'package:provider/provider.dart';
 import 'Authentication/Login.dart';
 import 'Authentication/NewLogin.dart';
 import 'Authentication/Register.dart';
+import 'Authentication/firstscreens/FirstAuth.dart';
+import 'Authentication/firstscreens/Screen3.dart';
+import 'Authentication/firstscreens/Screens1.dart';
+import 'Authentication/firstscreens/Screens2.dart';
+import 'Screens/master.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -98,9 +102,13 @@ class MyApp extends StatelessWidget {
                   "/login": (BuildContext context) =>LoginScreen(),
                   "/register": (BuildContext context) => Register(),
                   "/forget": (BuildContext context) => Forgetpassword(),
-                  "/homepage": (BuildContext context) => Homepage(),
+                  "/homepage": (BuildContext context) => Master(),
                   "/accept": (BuildContext context) => AcceptAgreement(),
                   "/first": (BuildContext context) => ScreenOne(),
+                  "/second": (BuildContext context) => ScreenTwo(),
+                  "/third": (BuildContext context) => ScreenThree(),
+                  "/firstAuth": (BuildContext context) => FirstAuth(),
+
                 },
               );
             }

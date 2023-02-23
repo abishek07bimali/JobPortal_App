@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ind_flutter/Authentication/Login.dart';
 import 'package:provider/provider.dart';
 import '../models/user_model.dart';
 import '../viewmodels/auth_viewmodel.dart';
@@ -50,8 +51,14 @@ class _RegisterState extends State<Register> {
               fullname: fullname.text,
               username: username.text,
               address: address.text
-          )).then((value) {
+          ))
+
+      .then((value) {
         Navigator.of(context).pushReplacementNamed("/login");
+        // Navigator.push(
+        //   context,
+        //   MaterialPageRoute(builder: (context) => const LoginScreen()),
+        // );
       })
           .catchError((e){
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(e.message.toString())));
@@ -189,6 +196,24 @@ class _RegisterState extends State<Register> {
                             ),
                           ),
                         ),
+                        Padding(
+                          padding: EdgeInsets.all(5),
+                          child: TextFormField(
+                            controller: address,
+                            validator: (String? value) {
+                              if (value == null || value == "") {
+                                return "Address is required";
+                              }
+                              return null;
+                            },
+                            decoration: InputDecoration(
+                              border: OutlineInputBorder(),
+                              labelText: 'Address',
+                              hintText: 'Enter Your Address',
+                              prefixIcon: Icon(Icons.location_city),
+                            ),
+                          ),
+                        ),
 
                         Padding(
                           padding: EdgeInsets.all(5),
@@ -303,6 +328,11 @@ class _RegisterState extends State<Register> {
                             onPressed:(){
                               if (form.currentState!.validate()) {
                                 register();
+                                //
+                                // Navigator.push(
+                                //   context,
+                                //   MaterialPageRoute(builder: (context) => const LoginScreen(),),
+                                // );
                             }
                           },
                         ),
