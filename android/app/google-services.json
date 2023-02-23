@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "1127712589",
-    "project_id": "myapp-first-2489e",
-    "storage_bucket": "myapp-first-2489e.appspot.com"
+    "project_number": "825934530689",
+    "project_id": "newjob-portal",
+    "storage_bucket": "newjob-portal.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1127712589:android:c4a9f46b9f448aad6dd904",
+        "mobilesdk_app_id": "1:825934530689:android:c18f27a56aa009c1b8a580",
         "android_client_info": {
           "package_name": "com.example.ind_flutter"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1127712589-37migttmp1vhu301qs7q3nk0lps4omv3.apps.googleusercontent.com",
+          "client_id": "825934530689-36ghm6577on7gqmksc4hkseaonjlp8g7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAlXCUbqXB8qERdTq-z1-5XK4tHggkkicM"
+          "current_key": "AIzaSyASscULyFdywhuEAw3qrLC6lxfAxbbhOCU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1127712589-37migttmp1vhu301qs7q3nk0lps4omv3.apps.googleusercontent.com",
+              "client_id": "825934530689-36ghm6577on7gqmksc4hkseaonjlp8g7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

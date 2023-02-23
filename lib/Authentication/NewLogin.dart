@@ -118,9 +118,25 @@ class _NewLoginState extends State<NewLogin> {
                 ElevatedButton(
                   // textColor: Colors.white,
                   // color: Colors.blue,
-                  child: Text('Sign In'),
+                  child: Text('Login'),
                   onPressed: (){},
-                )
+                ),
+
+
+                Container(
+                  child: TextButton(
+                    onPressed: () {
+                      // Navigator.push(context,MaterialPageRoute(builder: (context)=>RegisterScreen()));
+                      Navigator.of(context).pushReplacementNamed("/register");
+                    },
+                    child: Text(
+                      'New user?  Join us for free..',
+                      style: TextStyle(color: Colors.blueAccent),
+                    ),
+                  ),
+                ),
+
+
               ],
             )
         )
