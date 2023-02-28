@@ -1,5 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../viewmodels/auth_viewmodel.dart';
+import '../viewmodels/global_ui_viewmodel.dart';
 
 class NewLogin extends StatefulWidget {
   const NewLogin({Key? key}) : super(key: key);
@@ -31,6 +35,18 @@ class _NewLoginState extends State<NewLogin> {
   SnackBar(backgroundColor: Colors.red, content: Text(e.toString())));
   }
   }
+
+
+  late GlobalUIViewModel _ui;
+  late AuthViewModel _authu;
+  @override
+  void initState() {
+    _ui = Provider.of<GlobalUIViewModel>(context, listen: false);
+    _authu = Provider.of<AuthViewModel>(context, listen: false);
+    super.initState();
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -119,7 +135,12 @@ class _NewLoginState extends State<NewLogin> {
                   // textColor: Colors.white,
                   // color: Colors.blue,
                   child: Text('Login'),
-                  onPressed: (){},
+                  onPressed: (){
+                    if (form.currentState!.validate()) {
+                      login();
+                    }
+
+                  },
                 ),
 
 

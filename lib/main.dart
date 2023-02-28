@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:ind_flutter/Authentication/ForgetPassword.dart';
-import 'package:ind_flutter/ui/AcceptAgreement.dart';
-import 'package:ind_flutter/ui/mainscreen.dart';
+
 import 'package:ind_flutter/viewmodels/auth_viewmodel.dart';
 import 'package:ind_flutter/viewmodels/global_ui_viewmodel.dart';
 import 'package:loader_overlay/loader_overlay.dart';
@@ -97,13 +96,13 @@ class MyApp extends StatelessWidget {
                 theme: ThemeData(
                   primarySwatch: Colors.blue,
                 ),
-                initialRoute: "/homepage",
+                initialRoute: "/first",
                 routes: {
-                  "/login": (BuildContext context) =>LoginScreen(),
+                  "/login": (BuildContext context) =>NewLogin(),
                   "/register": (BuildContext context) => Register(),
                   "/forget": (BuildContext context) => Forgetpassword(),
                   "/homepage": (BuildContext context) => Master(),
-                  "/accept": (BuildContext context) => AcceptAgreement(),
+                  // "/accept": (BuildContext context) => AcceptAgreement(),
                   "/first": (BuildContext context) => ScreenOne(),
                   "/second": (BuildContext context) => ScreenTwo(),
                   "/third": (BuildContext context) => ScreenThree(),

@@ -149,7 +149,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
             Text(
-              "Mero Jagir: Start Your Dream Job with us",
+              "MeroJagir: Start Your Dream Job with us",
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 17),
             ),

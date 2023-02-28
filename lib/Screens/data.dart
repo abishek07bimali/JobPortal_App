@@ -10,7 +10,7 @@ List<NavigationItem> getNavigationItemList(){
   return <NavigationItem>[
     NavigationItem("Jobs"),
     NavigationItem("Applications"),
-    NavigationItem("Profile"),
+    // NavigationItem("Profile"),
 
   ];
 }
