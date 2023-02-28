@@ -60,6 +60,13 @@ class _NewLoginState extends State<NewLogin> {
             padding: EdgeInsets.all(15),
             child: Column(
               children: <Widget>[
+                Center(
+                  child: Image.asset(
+                    "assets/logo/loginpage.png",
+                    height: 300,
+                    width: 300,
+                  ),
+                ),
                 Padding(
                   padding: EdgeInsets.all(15),
                   child: TextFormField(
