@@ -336,6 +336,24 @@ class _RegisterState extends State<Register> {
                             }
                           },
                         ),
+                        ElevatedButton(
+                          // textColor: Colors.white,
+                          // color: Colors.blue,
+                          child: Text('Back'),
+                          style: ButtonStyle(
+                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(18.0),
+                                )
+                            ),
+                          ),
+                          // onPressed:password_strength != 1 ? null : (){
+                          onPressed:(){
+                            Navigator.of(context).pushReplacementNamed("/login");
+
+    }
+                          ,
+                        ),
 
                       ],
                     )

@@ -67,7 +67,7 @@ class _MasterState extends State<Master> {
           switch (item.title){
             case "Jobs": currentWidgetView = Jobs(); break;
             case "Applications": currentWidgetView = Applications(); break;
-            case "Profile": currentWidgetView = Profile(); break;
+            // case "Profile": currentWidgetView = AccountScreen(); break;
 
           }
           selectedItem = item;
